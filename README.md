@@ -8,8 +8,8 @@ RealSense_data_record is a recorder of face information with Intel RealSense F20
 The face information contains Pose, Landmarks, Expressions, and Movie(.avi).
 
 ## Demo
-* /Facetracing/csvfiles/***.csv
-* /Facetracing/moviefiles/***.csv
+* /FaceTracking/csvfiles/***.csv
+* /FaceTracking/moviefiles/***.csv
 
 ## Requirement
 * Visual Studio Community 2015 (C++)
