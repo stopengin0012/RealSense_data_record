@@ -1,0 +1,24 @@
+﻿2015/10/20 11:55:30 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\00_workspace\CH6-1\RealSenseSample\RealSenseSample.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\00_workspace\CH6-1\packages\OpenCV.2.4.10\build\native\../../build/native/include/" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D HAS_OPENCV /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(31): warning C4244: '引数': 'const int' から 'pxcF32' への変換です。データが失われる可能性があります。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\00_workspace\CH6-1\Release\RealSenseSample.exe" /INCREMENTAL:NO /NOLOGO libpxcmd.lib libpxcutilsmd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\00_workspace\CH6-1\Release\RealSenseSample.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\00_workspace\CH6-1\Release\RealSenseSample.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+     1>main.obj : error LNK2001: 外部シンボル ""void __cdecl cv::imshow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::_InputArray const &)" (?imshow@cv@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV_InputArray@1@@Z)" は未解決です。
+     1>main.obj : error LNK2001: 外部シンボル ""int __cdecl cv::_interlockedExchangeAdd(int *,int)" (?_interlockedExchangeAdd@cv@@YAHPAHH@Z)" は未解決です。
+     1>main.obj : error LNK2001: 外部シンボル ""public: void __thiscall cv::Mat::copySize(class cv::Mat const &)" (?copySize@Mat@cv@@QAEXABV12@@Z)" は未解決です。
+     1>main.obj : error LNK2001: 外部シンボル ""public: void __thiscall cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QAEXXZ)" は未解決です。
+     1>main.obj : error LNK2001: 外部シンボル ""public: void __thiscall cv::Mat::create(int,int const *,int)" (?create@Mat@cv@@QAEXHPBHH@Z)" は未解決です。
+     1>main.obj : error LNK2001: 外部シンボル ""void __cdecl cv::putText(class cv::Mat &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::Point_<int>,int,double,class cv::Scalar_<double>,int,int,bool)" (?putText@cv@@YAXAAVMat@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$Point_@H@1@HNV?$Scalar_@N@1@HH_N@Z)" は未解決です。
+     1>main.obj : error LNK2001: 外部シンボル ""void __cdecl cv::rectangle(class cv::Mat &,class cv::Rect_<int>,class cv::Scalar_<double> const &,int,int,int)" (?rectangle@cv@@YAXAAVMat@1@V?$Rect_@H@1@ABV?$Scalar_@N@1@HHH@Z)" は未解決です。
+     1>main.obj : error LNK2001: 外部シンボル ""void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPAX@Z)" は未解決です。
+     1>main.obj : error LNK2001: 外部シンボル ""public: __thiscall cv::_InputArray::_InputArray(class cv::Mat const &)" (??0_InputArray@cv@@QAE@ABVMat@1@@Z)" は未解決です。
+     1>main.obj : error LNK2001: 外部シンボル ""int __cdecl cv::waitKey(int)" (?waitKey@cv@@YAHH@Z)" は未解決です。
+     1>C:\00_workspace\CH6-1\Release\RealSenseSample.exe : fatal error LNK1120: 10 件の未解決の外部参照
+     1>プロジェクト "C:\00_workspace\CH6-1\RealSenseSample\RealSenseSample.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:01.23
