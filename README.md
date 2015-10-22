@@ -22,4 +22,4 @@ The face information contains Pose, Landmarks, Expressions, and Movie(.avi).
 
 ## Author
 
-[stopengin](https://github.com/stopengin0012)
+[stopengin0012](https://github.com/stopengin0012)
