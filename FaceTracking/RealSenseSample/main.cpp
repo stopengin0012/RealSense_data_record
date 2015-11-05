@@ -620,7 +620,19 @@ private:
 			*/
 
 			for (int s = 0; s < numPoints; s++) {	//Landmarksのデバイスからの三次元位置情報
-				ofs_landmark << "," << landmarkPoints[s].world.x << "," << landmarkPoints[s].world.y << "," << landmarkPoints[s].world.z;
+				pxcF32 land_x, land_y, land_z;
+
+				if (fabsf(landmarkPoints[s].world.x) > 1)land_x = FloatRound(landmarkPoints[s].world.x, 4)  * (-1) / 1000;
+				else land_x = FloatRound(landmarkPoints[s].world.x, 4);
+
+				if (fabsf(landmarkPoints[s].world.y) > 1)land_y = FloatRound(landmarkPoints[s].world.y, 4) / 1000;
+				else land_y = FloatRound(landmarkPoints[s].world.y, 4);
+
+				if (fabsf(landmarkPoints[s].world.z) > 2)land_z = FloatRound(landmarkPoints[s].world.z, 4) / 1000;
+				else land_z = FloatRound(landmarkPoints[s].world.z, 4);
+
+	
+				ofs_landmark << "," << FloatRound(land_x, 4) << "," << FloatRound(land_y, 4) << "," << FloatRound(land_z, 4);
 			}
 
 			ofs_landmark << endl;
@@ -629,6 +641,24 @@ private:
 
 		}
 
+
+	}
+
+	
+	pxcF32 FloatRound(pxcF32 f, int roundNum) {
+
+		pxcF32 ret = 0;
+		int _r;
+		if (f == 0) {
+			return 0;
+		}
+		else {
+			_r = (int)(f * (pow(10, roundNum)));
+
+			ret = _r / pow(10, roundNum);
+
+			return ret;
+		}
 
 	}
 

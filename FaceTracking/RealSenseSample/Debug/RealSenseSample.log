@@ -1,20 +1,21 @@
-﻿2015/10/22 13:25:40 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "C:\00_workspace\01_ActionRecognition\FaceTracking\RealSenseSample\RealSenseSample.vcxproj" (Build ターゲット)。
+﻿2015/11/05 15:02:00 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\00_workspace\RealSense_data_record\FaceTracking\RealSenseSample\RealSenseSample.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\00_workspace\01_ActionRecognition\FaceTracking\packages\OpenCV.2.4.10\build\native\../../build/native/include/ /IC:\OpenCV2410\opencv\build\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D HAS_OPENCV /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\00_workspace\RealSense_data_record\FaceTracking\packages\OpenCV.2.4.10\build\native\../../build/native/include/ /IC:\OpenCV2410\opencv\build\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D HAS_OPENCV /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>c:\00_workspace\01_actionrecognition\facetracking\realsensesample\main.cpp(137): warning C4244: '引数': 'const int' から 'pxcF32' への変換です。データが失われる可能性があります。
-     1>c:\00_workspace\01_actionrecognition\facetracking\realsensesample\main.cpp(420): warning C4244: '引数': 'pxcF32' から 'int' への変換です。データが失われる可能性があります。
-     1>c:\00_workspace\01_actionrecognition\facetracking\realsensesample\main.cpp(505): warning C4806: '==': 安全でない演算: 'bool' 型から 'int' 型への上位変換を行うと与えられた定数に等しくなりません
-     1>c:\00_workspace\01_actionrecognition\facetracking\realsensesample\main.cpp(518): warning C4806: '==': 安全でない演算: 'bool' 型から 'int' 型への上位変換を行うと与えられた定数に等しくなりません
-     1>c:\00_workspace\01_actionrecognition\facetracking\realsensesample\main.cpp(398): warning C4101: 'numPointsByGroupType': ローカル変数は 1 度も使われていません。
-     1>c:\00_workspace\01_actionrecognition\facetracking\realsensesample\main.cpp(399): warning C4101: 'landmarkType': ローカル変数は 1 度も使われていません。
+     1>c:\00_workspace\realsense_data_record\facetracking\realsensesample\main.cpp(137): warning C4244: '引数': 'const int' から 'pxcF32' への変換です。データが失われる可能性があります。
+     1>c:\00_workspace\realsense_data_record\facetracking\realsensesample\main.cpp(420): warning C4244: '引数': 'pxcF32' から 'int' への変換です。データが失われる可能性があります。
+     1>c:\00_workspace\realsense_data_record\facetracking\realsensesample\main.cpp(505): warning C4806: '==': 安全でない演算: 'bool' 型から 'int' 型への上位変換を行うと与えられた定数に等しくなりません
+     1>c:\00_workspace\realsense_data_record\facetracking\realsensesample\main.cpp(518): warning C4806: '==': 安全でない演算: 'bool' 型から 'int' 型への上位変換を行うと与えられた定数に等しくなりません
+     1>c:\00_workspace\realsense_data_record\facetracking\realsensesample\main.cpp(398): warning C4101: 'numPointsByGroupType': ローカル変数は 1 度も使われていません。
+     1>c:\00_workspace\realsense_data_record\facetracking\realsensesample\main.cpp(399): warning C4101: 'landmarkType': ローカル変数は 1 度も使われていません。
+     1>c:\00_workspace\realsense_data_record\facetracking\realsensesample\main.cpp(658): warning C4244: '=': 'double' から 'pxcF32' への変換です。データが失われる可能性があります。
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\00_workspace\01_ActionRecognition\FaceTracking\Debug\RealSenseSample.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\OpenCV2410\opencv\build\x86\vc12\lib opencv_calib3d2410d.lib opencv_contrib2410d.lib opencv_core2410d.lib opencv_features2d2410d.lib opencv_flann2410d.lib opencv_gpu2410d.lib opencv_highgui2410d.lib opencv_imgproc2410d.lib opencv_legacy2410d.lib opencv_ml2410d.lib opencv_nonfree2410d.lib opencv_objdetect2410d.lib opencv_ocl2410d.lib opencv_photo2410d.lib opencv_stitching2410d.lib opencv_superres2410d.lib opencv_ts2410d.lib opencv_video2410d.lib opencv_videostab2410d.lib libpxcmd_d.lib libpxcutilsmd_d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\00_workspace\01_ActionRecognition\FaceTracking\Debug\RealSenseSample.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\00_workspace\01_ActionRecognition\FaceTracking\Debug\RealSenseSample.lib" /MACHINE:X86 Debug\main.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\00_workspace\RealSense_data_record\FaceTracking\Debug\RealSenseSample.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\OpenCV2410\opencv\build\x86\vc12\lib opencv_calib3d2410d.lib opencv_contrib2410d.lib opencv_core2410d.lib opencv_features2d2410d.lib opencv_flann2410d.lib opencv_gpu2410d.lib opencv_highgui2410d.lib opencv_imgproc2410d.lib opencv_legacy2410d.lib opencv_ml2410d.lib opencv_nonfree2410d.lib opencv_objdetect2410d.lib opencv_ocl2410d.lib opencv_photo2410d.lib opencv_stitching2410d.lib opencv_superres2410d.lib opencv_ts2410d.lib opencv_video2410d.lib opencv_videostab2410d.lib libpxcmd_d.lib libpxcutilsmd_d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\00_workspace\RealSense_data_record\FaceTracking\Debug\RealSenseSample.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\00_workspace\RealSense_data_record\FaceTracking\Debug\RealSenseSample.lib" /MACHINE:X86 Debug\main.obj
          Debug\OpenCVvRecoder.obj
-         RealSenseSample.vcxproj -> C:\00_workspace\01_ActionRecognition\FaceTracking\Debug\RealSenseSample.exe
-     1>プロジェクト "C:\00_workspace\01_ActionRecognition\FaceTracking\RealSenseSample\RealSenseSample.vcxproj" (Build ターゲット) のビルドが完了しました。
+         RealSenseSample.vcxproj -> C:\00_workspace\RealSense_data_record\FaceTracking\Debug\RealSenseSample.exe
+     1>プロジェクト "C:\00_workspace\RealSense_data_record\FaceTracking\RealSenseSample\RealSenseSample.vcxproj" (Build ターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
 
-経過時間 00:00:01.75
+経過時間 00:00:02.05
