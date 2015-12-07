@@ -31,7 +31,7 @@ bool showLandmarks = true;
 
 
 // 録画調整用
-bool recordAdjustment = true; // trueならば調整する
+bool recordAdjustment = false; // trueならば調整する
 const int fps = 30;
 const double oneCut = 1000.0 / fps;
 int sleepRemain = 0;
@@ -89,10 +89,10 @@ public:
 		ofs_landmark
 			<< "datetime,frame";
 
-		/*
+		
 		//画面位置での顔のLandmark情報
 		for (int s = 0; s < 78; s++) { ofs_landmark << "," << s << "._image_x," << s << "._image_y"; }
-		*/
+		
 
 		
 		//画面位置での顔のLandmark情報
@@ -204,6 +204,7 @@ public:
 		}
 
 		config->detection.isEnabled = true;
+		config->detection.maxTrackedFaces = 1;
 		config->pose.isEnabled = true;					//追加：顔の姿勢情報取得を可能にする
 		config->pose.maxTrackedFaces = POSE_MAXFACES;	//追加：二人までの姿勢を取得可能に設定する
 
@@ -324,7 +325,7 @@ private:
 
 		//顔のランドマーク（特徴点）のデータの入れ物を用意
 		PXCFaceData::LandmarksData *landmarkData[LANDMARK_MAXFACES];
-		PXCFaceData::LandmarkPoint* landmarkPoints;
+		PXCFaceData::LandmarkPoint* landmarkPoints = nullptr;
 		pxcI32 numPoints;
 
 
@@ -609,15 +610,20 @@ private:
 			ofs_expression << endl;
 
 			//Writing to CSV files about Landmark info
+
+			if (landmarkPoints == nullptr) {
+				continue;
+			}
+
 			ofs_landmark
 				<< newtime2 << ","							//datetime
 				<< std::to_string(frame);					//frame
+			
 
-			/*
 			for (int s = 0; s < numPoints; s++) {	//Landmarksの画面対応の二次元位置情報
 				ofs_landmark << "," << landmarkPoints[s].image.x << "," << landmarkPoints[s].image.y;
 			}
-			*/
+			
 
 			for (int s = 0; s < numPoints; s++) {	//Landmarksのデバイスからの三次元位置情報
 				pxcF32 land_x, land_y, land_z;
